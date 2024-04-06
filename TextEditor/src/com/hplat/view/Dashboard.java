@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
+import java.awt.Image;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -32,6 +33,7 @@ import java.io.Writer;
 import javax.swing.JTree;
 import javax.swing.SwingConstants;
 import javax.swing.JTextField;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.tree.DefaultTreeModel;
@@ -133,7 +135,7 @@ public class Dashboard extends JFrame {
 				}
 			}
 		});
-		openFileBtn.setBounds(641, 26, 92, 34);
+		openFileBtn.setBounds(626, 26, 107, 34);
 		contentPane.add(openFileBtn);
 
 		scrollPane_1 = new JScrollPane();
@@ -214,6 +216,14 @@ public class Dashboard extends JFrame {
 		fileTitleTxt.setBounds(235, 116, 381, 28);
 		contentPane.add(fileTitleTxt);
 		fileTitleTxt.setColumns(10);
+		
+		JLabel bgLbl = new JLabel("");
+		bgLbl.setBounds(136, 3, 662, 472);
+		ImageIcon bg = new ImageIcon("bg.jpg");
+		bgLbl.setIcon(new ImageIcon("C:\\Users\\latru\\Desktop\\hplat_TextEditor\\TextEditor\\src\\com\\hplat\\bg.jpg"));
+//		Image img = bg.getImage();
+//		this.setIconImage(img);
+		contentPane.add(bgLbl);
 
 	}
 
@@ -242,5 +252,4 @@ public class Dashboard extends JFrame {
 			}
 		}
 	}
-
 }
